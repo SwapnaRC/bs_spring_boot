@@ -40,6 +40,9 @@ public class Category_Pojo {
 		this.category_name = category_name;
 		this.isActive = isActive;
 	}
+	public Category_Pojo() {
+		super();
+	}
 	
 	
 	

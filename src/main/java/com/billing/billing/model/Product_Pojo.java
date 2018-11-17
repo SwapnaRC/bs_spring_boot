@@ -73,6 +73,10 @@ public Product_Pojo(int product_id, int category_id, String product_name, int mr
 	this.unit = unit;
 	this.isActive = isActive;
 }
+public Product_Pojo() {
+	super();
+
+}
 
 
 

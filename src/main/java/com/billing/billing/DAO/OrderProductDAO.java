@@ -8,4 +8,10 @@ public interface OrderProductDAO {
 
 	String add_order_product(Customer_Pojo customer_pojo, Product_Pojo product_pojo, Category_Pojo category_pojo);
 
+	Object get_order_product();
+
+	String delete_order_product(Category_Pojo category_pojo, Product_Pojo product_pojo);
+
+	String update_order_product(Category_Pojo category_pojo, Product_Pojo product_pojo);
+
 }

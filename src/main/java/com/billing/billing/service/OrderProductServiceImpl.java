@@ -22,5 +22,20 @@ public class OrderProductServiceImpl implements OrderProductService {
 		category_pojo.setIsActive("1");
 		return this.orderproductdao.add_order_product(customer_pojo,product_pojo,category_pojo);
 	}
+	@Override
+	public Object get_order_product() {
+		// TODO Auto-generated method stub
+		return this.orderproductdao.get_order_product();
+	}
+	@Override
+	public String delete_order_product(Category_Pojo category_pojo ,Product_Pojo product_pojo) {
+		// TODO Auto-generated method stub
+		return this.orderproductdao.delete_order_product( category_pojo, product_pojo);
+	}
+	@Override
+	public String update_order_product(Category_Pojo category_pojo, Product_Pojo product_pojo) {
+		// TODO Auto-generated method stub
+		return this.orderproductdao.update_order_product(category_pojo,product_pojo);
+	}
 
 }
